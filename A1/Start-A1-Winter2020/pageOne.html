@@ -7,101 +7,133 @@
 
    <link href="reset.css" rel="stylesheet">
    <link href="assign1.css" rel="stylesheet">
-
+    <script src="assign2.js"></script>
 </head>
 <body>
-    <nav>
-        <a>My Account</a>
-        <a>Wish List</a>
-        <a>Shopping Cart</a>
-        <a>Checkout</a>
-    </nav>
+    <header>
+        <nav class ="firstNavBar">
+            <a href="#">My Account</a>
+            <a href = "#">Wish List</a>
+            <a href ="#">Shopping Cart</a>
+            <a href ="#">Checkout</a>
+        </nav>
+    </header>
     <h1>Art Store</h1>
-    <nav>
+    <nav class ="secondNavBar">
 
-        <a>Home<a>
-        <a>About Us<a>
-        <a>Art Works</a>
-        <a>Artists</a>
+        <a href ="#">Home</a>
+        <a href ="#">About Us</a>
+        <a href ="#">Art Works</a>
+        <a href = "#">Artists</a>
     </nav>
-    <div id="main">
 
-        <h2>Self-portrait in a Straw Hat</h2>
-        <h5>By Louise Elisabeth Lebrun</h5>
-        <img src ="./images/113010-m.jpg">
-        <p>The painting appears, after cleaning, to be an autograph replica of a picture,
-            the original of which was painted in Brussels in 1782 in free imitation of
-            Rubens's 'Chapeau de Paille', which LeBrun had seen in Antwerp. It was 
-            exhibited in Paris in 1782 at the Salon de la Correspondance. 
-            LeBrun's original is recorded in a private collection in France.
-        </p>
-        <p id="price">$700</p>
-        <block>
+    <div class = "page">
+        <div class ="mainEntry">
+            <h2>Self-portrait in a Straw Hat</h2>
 
-            <button>Add to Wish List</button>
-            <button>Add to Shopping Cart</button>
-        </block>
-        <h3>Product details</h3>
-        <block>
-            <p>Date:        1782</p>
-            <p>Medium:      Oil on canvas</p>
-            <p>Dimensions:  98cm x 71cm</p>
-            <p>Home:        <a href="#">National Gallery, London</a></p>
-            <p>Genres:      <a href="#">Realism, Rococo</a></p>
-            <p>Subjects:    <a href="#">People, Arts</a></p>
-        </block>
-        <h3>Similar Products</h3>
+            <p class="artistName">By <a href="#">Louise Elisabeth Lebrun</a></p>
+            <img id = "artistImage" class="bigImage" src ="./images/113010-m.jpg">
+            <div class = "mainBody">
+
+                
+                <div class = "bodyDesc">
+                    <p class ="bigDesc">The painting appears, after cleaning, to be an autograph replica of a picture,
+                        the original of which was painted in Brussels in 1782 in free imitation of
+                        Rubens's 'Chapeau de Paille', which LeBrun had seen in Antwerp. It was 
+                        exhibited in Paris in 1782 at the Salon de la Correspondance. 
+                        LeBrun's original is recorded in a private collection in France.
+                    </p>
+                    <p class="price"><b><span class = "priceTag">$700</span></b></p>
+                    <div class="buyButtons">
+
+                        <button class = "cartButtons">Add to Wish List</button>
+                        <button class = "cartButtons">Add to Shopping Cart</button>
+                    </div>
+                    <h3>Product details</h3>
+                    <hr>
+                    <table class = "details">
+                        <tr>
+                            <td class = "bold">Date:</td>
+                            <td>1782</td>
+                        </tr>
+                        <tr>
+
+                            <td class = "bold">Medium:</td>
+                            <td>Oil on Canvas</td>
+                        </tr>
+                        <tr>
+
+                            <td class="bold">Dimension:</td>
+                            <td>98cm x 71cm</td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Home:</td>
+                            <td><a href="#">National Gallery, London</a></td>
+                        </tr>
+                        <tr>
+
+                            <td class="bold">Genres:</td>
+                            <td><a href="#">Realism, Rococo</a></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Subjects:</td>
+                            <td><a href="#">People, Arts</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="similar">
+            <h3>Similar Products</h3>
+            <hr>
+            <div class = "allBlocks">
+                <div class ="recommendedBlocks">
+                    <img id="img1" onmouseover="hover(id)" onmouseout="unhover(id)" src="./images/thumbs/116010.jpg">
+                    <a href="#">Artist Holding a Thistle</a>
+                    <br>
+                    <button>View</button>
+                    <button>Wish</button>
+                    <button>Cart</button>
+                </div>
+
+
+                <div class ="recommendedBlocks">
+                    <img id="img2" onmouseover="hover(id)" onmouseout="unhover(id)" src="./images/thumbs/120010.jpg">
+                    <a href="#">Portrait of Eleanor of Toledo</a>
+                    <br>
+                    <button>View</button>
+                    <button>Wish</button>
+                    <button>Cart</button>
+                </div>
+
+
+                <div class ="recommendedBlocks">
+                    <img id="img3" onmouseover="hover(id)" onmouseout="unhover(id)" src="./images/thumbs/107010.jpg">
+                    <a href="#">Madame de Pompadour</a>
+                    <button>View</button>
+                    <button>Wish</button>
+                    <button>Cart</button>
+                </div>
+
+
+
+
+                <div class ="recommendedBlocks">
+                    <img id="img4" onmouseover="hover(id)" onmouseout="unhover(id)" src="./images/thumbs/106020.jpg">
+                    <a href="#">Girl with a Pearl Earring</a>
+                    <button>View</button>
+                    <button>Wish</button>
+                    <button>Cart</button>
+                </div>
+            </div>
+        </div>
+            
     </div>
-    <div id="similar">
-
-        <span>
-
-            <block>
-                <img src="./images/thumbs/116010.jpg">
-                <a href="#">Artist Holding a Thistle</a>
-                <button>View</button>
-                <button>Wish</button>
-                <button>Cart</button>
-            </block>
-
-        </span>
-        <span>
-
-            <block>
-                <img src="./images/thumbs/116010.jpg">
-                <a href="#">Artist Holding a Thistle</a>
-                <button>View</button>
-                <button>Wish</button>
-                <button>Cart</button>
-            </block>
-
-        </span>
-        <span>
-
-            <block>
-                <img src="./images/thumbs/107010.jpg">
-                <a href="#">Madame de Pompadour</a>
-                <button>View</button>
-                <button>Wish</button>
-                <button>Cart</button>
-
-
-            </block>
-        </span>
-
-        <span>
-            <block>
-                <img src="./images/thumbs/106020.jpg">
-                <a href="#">Girl with a Pearl Earring</a>
-                <button>View</button>
-                <button>Wish</button>
-                <button>Cart</button>
-            </block>
-        </span>
-
-        
-    </div>
+    
     <footer>
+
         <p>All images are copyright to their owners. This is just a hypothetical site &copy; 2014 Copyright Art Store</p>
     </footer>
+    </body>
+
 </html>
