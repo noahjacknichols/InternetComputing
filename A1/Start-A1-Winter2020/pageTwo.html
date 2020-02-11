@@ -146,11 +146,13 @@
             <section>
                 <h4>4. All Done</h4>
                 <hr>
-
-                <input type="checkbox"><label>I agree to the <a href="#">Terms of the Site</a></label>
-                <br>
-                <button class="submit" type="submit">
-                    <img src="./images/button_ok.png">Sign me up!</button>
+                <div class="agreeDiv">
+                    <input name= "agreement" type="checkbox"><label>I agree to the <a href="#">Terms of the Site</a></label>
+                    <br>
+                    <button onclick="function3(event)">
+                        <img src="./images/button_ok.png">Sign me up!</button>
+                    <div class="errors"></div>
+                </div>
             </section>
 
         </form>
